@@ -1,3 +1,6 @@
+const rulesBtn = document.getElementById("rules-btn");
+const closeBtn = document.getElementById("close-btn");
+const rules = document.getElementById("rules");
 const wordEl = document.getElementById('word');
 const wrongLettersEl = document.getElementById('wrong-letters');
 const playAgainBtn = document.getElementById('play-button');
@@ -101,3 +104,7 @@ playAgainBtn.addEventListener('click',()=>{
     popup.style.display='none';
 })
 displayWord();
+
+//Rules event handler and close event handler
+rulesBtn.addEventListener("click", () => rules.classList.add("show"));
+closeBtn.addEventListener("click", () => rules.classList.remove("show"));
