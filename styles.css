@@ -206,3 +206,11 @@ h1{
         transform: translateY(-250px);
     } */
 }
+
+#loader{
+    background: #F9E4D4 url(Loading.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}

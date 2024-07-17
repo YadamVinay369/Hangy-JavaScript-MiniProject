@@ -108,3 +108,12 @@ displayWord();
 //Rules event handler and close event handler
 rulesBtn.addEventListener("click", () => rules.classList.add("show"));
 closeBtn.addEventListener("click", () => rules.classList.remove("show"));
+
+
+//Page Loading
+
+let loader = document.getElementById("loader");
+
+window.addEventListener("load",()=>{
+    let x = setTimeout(()=>{loader.style.display = "none"},2000);
+})
